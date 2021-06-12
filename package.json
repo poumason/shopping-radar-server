@@ -2,7 +2,6 @@
   "name": "shopping-radar-server",
   "version": "1.0.0",
   "description": "The repo be build a Bot server. It records new user and handles some commands.",
-  "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
