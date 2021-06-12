@@ -1,0 +1,53 @@
+{
+  "name": "shopping-radar-server",
+  "version": "1.0.0",
+  "description": "The repo be build a Bot server. It records new user and handles some commands.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poumason/shopping-radar-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poumason/shopping-radar-server/issues"
+  },
+  "homepage": "https://github.com/poumason/shopping-radar-server#readme",
+  "dependencies": {
+    "airtable": "^0.11.1",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "node-telegram-bot-api": "^0.53.0",
+    "telegraf": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-semistandard": "15.0.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "semistandard"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  }
+}
