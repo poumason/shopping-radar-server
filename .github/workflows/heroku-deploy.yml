@@ -2,7 +2,7 @@
 # https://github.com/marketplace/actions/deploy-to-heroku#options
 jobs:
   heroku-deploy:
-    round-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
