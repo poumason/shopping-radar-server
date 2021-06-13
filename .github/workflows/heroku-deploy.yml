@@ -1,5 +1,10 @@
 # .github/workflows/heroku-deploy.yml
 # https://github.com/marketplace/actions/deploy-to-heroku#options
+on:
+  push:
+    branches:
+    - master
+
 jobs:
   heroku-deploy:
     runs-on: ubuntu-latest
