@@ -1,0 +1,20 @@
+# .github/workflows/heroku-deploy.yml
+# https://github.com/marketplace/actions/deploy-to-heroku#options
+jobs:
+  heroku-deploy:
+    round-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Deploy to Heroku
+        uses: AkhileshNS/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          branch: master
+        env:
+          HD_TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          HD_AIRTABLE_TABLE_NAME: ${{ secrets.AIRTABLE_TABLE_NAME }}
+          HD_AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+
