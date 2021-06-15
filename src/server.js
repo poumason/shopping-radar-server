@@ -4,13 +4,13 @@ const packageInfo = require('../package.json');
 const port = process.env.PORT || 80;
 const app = express();
 
-app.use(cors);
+app.use(cors());
 
 app.get('/', (req, res) => res.json(packageInfo.version));
 
 app.get('/health', async (req, res) => {
   res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-  res.send('I\'m fine, thank you. (${Date.now()})');
+  res.send(`I'm fine, thank you. (${Date.now()})`);
 });
 
 app.listen(port, () => {
