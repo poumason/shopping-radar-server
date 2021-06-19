@@ -22,10 +22,11 @@
     "cors": "^2.8.5",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
-    "node-telegram-bot-api": "^0.53.0"
+    "node-telegram-bot-api": "^0.53.0",
+    "shopping-radar-sharedcode": "git+https://github.com/poumason/shopping-radar-sharedcode.git#master"
   },
   "devDependencies": {
-    "eslint": "^7.13.0",
+    "eslint": "^7.29.0",
     "eslint-config-semistandard": "15.0.1",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
